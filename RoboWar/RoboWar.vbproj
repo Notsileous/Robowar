@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{926EC090-4CB1-47AD-8855-D84C81BD169D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RoboWar.My.MyApplication</StartupObject>
+    <RootNamespace>RoboWar</RootNamespace>
+    <AssemblyName>RoboWar</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\bens\vb Projects\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RoboWar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RoboWar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>940A64EDA3ACD2003AD9D6D6763D688770AB3725</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RoboWar_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedChoices.Designer.vb">
+      <DependentUpon>AdvancedChoices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedChoices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoinFlip.Designer.vb">
+      <DependentUpon>CoinFlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CoinFlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drain.Designer.vb">
+      <DependentUpon>Drain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMP.Designer.vb">
+      <DependentUpon>EMP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndGame.Designer.vb">
+      <DependentUpon>EndGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EndGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaser.Designer.vb">
+      <DependentUpon>frmTaser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="P1Health.Designer.vb">
+      <DependentUpon>P1Health.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1Health.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGamePlus.Designer.vb">
+      <DependentUpon>NewGamePlus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewGamePlus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P1DroneStrike.Designer.vb">
+      <DependentUpon>P1DroneStrike.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1DroneStrike.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P1TeslaPowerUp.Designer.vb">
+      <DependentUpon>P1TeslaPowerUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1TeslaPowerUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2DroneStrike.Designer.vb">
+      <DependentUpon>P2DroneStrike.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2DroneStrike.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P1FullPower.Designer.vb">
+      <DependentUpon>P1FullPower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1FullPower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hardcase.vb" />
+    <Compile Include="P1MGun.Designer.vb">
+      <DependentUpon>P1MGun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1MGun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2FullPower.Designer.vb">
+      <DependentUpon>P2FullPower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2FullPower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2Health.Designer.vb">
+      <DependentUpon>P2Health.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2Health.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2MGun.Designer.vb">
+      <DependentUpon>P2MGun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2MGun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P1Missile.Designer.vb">
+      <DependentUpon>P1Missile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1Missile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P1MissilePowerUp.Designer.vb">
+      <DependentUpon>P1MissilePowerUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1MissilePowerUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opponent Select.Designer.vb">
+      <DependentUpon>Opponent Select.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Opponent Select.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P1 Select Form.Designer.vb">
+      <DependentUpon>P1 Select Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1 Select Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadScreen.Designer.vb">
+      <DependentUpon>LoadScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Fight Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Fight Form.Designer.vb">
+      <DependentUpon>Main Fight Form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="P2Missile.Designer.vb">
+      <DependentUpon>P2Missile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2Missile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2MissilePowerUp.Designer.vb">
+      <DependentUpon>P2MissilePowerUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2MissilePowerUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2Sheilds.Designer.vb">
+      <DependentUpon>P2Sheilds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2Sheilds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2Tesla.Designer.vb">
+      <DependentUpon>P2Tesla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2Tesla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2TeslaPowerUp.Designer.vb">
+      <DependentUpon>P2TeslaPowerUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P2TeslaPowerUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardChoicesP1.Designer.vb">
+      <DependentUpon>StandardChoicesP1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StandardChoicesP1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ripper.vb" />
+    <Compile Include="P1Sheilds.Designer.vb">
+      <DependentUpon>P1Sheilds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1Sheilds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scorpion.vb" />
+    <Compile Include="StandardChoicesP2.Designer.vb">
+      <DependentUpon>StandardChoicesP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StandardChoicesP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Static.vb" />
+    <Compile Include="P1Tesla.Designer.vb">
+      <DependentUpon>P1Tesla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P1Tesla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdvancedChoices.resx">
+      <DependentUpon>AdvancedChoices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinFlip.resx">
+      <DependentUpon>CoinFlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drain.resx">
+      <DependentUpon>Drain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMP.resx">
+      <DependentUpon>EMP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndGame.resx">
+      <DependentUpon>EndGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaser.resx">
+      <DependentUpon>frmTaser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGamePlus.resx">
+      <DependentUpon>NewGamePlus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1DroneStrike.resx">
+      <DependentUpon>P1DroneStrike.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1Health.resx">
+      <DependentUpon>P1Health.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1TeslaPowerUp.resx">
+      <DependentUpon>P1TeslaPowerUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2DroneStrike.resx">
+      <DependentUpon>P2DroneStrike.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1FullPower.resx">
+      <DependentUpon>P1FullPower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1MGun.resx">
+      <DependentUpon>P1MGun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2FullPower.resx">
+      <DependentUpon>P2FullPower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2Health.resx">
+      <DependentUpon>P2Health.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2MGun.resx">
+      <DependentUpon>P2MGun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1Missile.resx">
+      <DependentUpon>P1Missile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1MissilePowerUp.resx">
+      <DependentUpon>P1MissilePowerUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opponent Select.resx">
+      <DependentUpon>Opponent Select.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1 Select Form.resx">
+      <DependentUpon>P1 Select Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadScreen.resx">
+      <DependentUpon>LoadScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Fight Form.resx">
+      <DependentUpon>Main Fight Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2Missile.resx">
+      <DependentUpon>P2Missile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1Sheilds.resx">
+      <DependentUpon>P1Sheilds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1Tesla.resx">
+      <DependentUpon>P1Tesla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2MissilePowerUp.resx">
+      <DependentUpon>P2MissilePowerUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2Sheilds.resx">
+      <DependentUpon>P2Sheilds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2Tesla.resx">
+      <DependentUpon>P2Tesla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2TeslaPowerUp.resx">
+      <DependentUpon>P2TeslaPowerUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardChoicesP1.resx">
+      <DependentUpon>StandardChoicesP1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardChoicesP2.resx">
+      <DependentUpon>StandardChoicesP2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="RoboWar_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Images\coin_front.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
